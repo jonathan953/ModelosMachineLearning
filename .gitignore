@@ -1,0 +1,40 @@
+# 🚀 Ignorar a pasta do ambiente virtual (venv)
+venv/
+.venv/
+
+# 🚀 Ignorar arquivos de cache e compilação do Python
+__pycache__/
+*.py[cod]
+*.so
+*.dll
+*.dylib
+
+# 🚀 Ignorar arquivos de logs e dumps
+*.log
+*.csv
+*.sqlite3
+*.db
+*.pkl
+*.json
+
+# 🚀 Ignorar configurações locais do VSCode e Jupyter Notebook
+.vscode/
+.ipynb_checkpoints/
+
+# 🚀 Ignorar arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# 🚀 Ignorar credenciais e chaves (evite expor dados sensíveis!)
+.env
+*.pem
+*.key
+
+# 🚀 Ignorar arquivos de pacotes e dependências
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 🚀 Ignorar builds e pacotes gerados
+build/
+dist/
+*.egg-info/
