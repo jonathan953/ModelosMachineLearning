@@ -90,7 +90,7 @@ Cada notebook possui:
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu_usuario/seu_repositorio.git
+git clone https://github.com/jonathan953/ModelosMachineLearning.git
 ```
 
 2. Instale os pacotes do ambiente
