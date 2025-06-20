@@ -1,65 +1,116 @@
-# Modelos de Machine Learning
+# Projeto de Modelos de Machine Learning
 
-Este reposit\xC3\xB3rio re\xC3\xBAn\xC3\xA9 diversos exemplos pr\xC3\xA1ticos de Machine Learning organizados em notebooks Jupyter. Os notebooks est\xC3\xA3o agrupados por tarefa (regress\xC3\xA3o, classifica\xC3\xA7\xC3\xA3o, agrupamento e redes neurais) e cont\xC3\xAAm explica\xC3\xA7\xC3\xB5es em portugu\xC3\xAAs sobre cada t\xC3\xA9cnica.
+Este repositório reúne uma coleção abrangente de **modelos de Machine Learning** aplicados a diferentes problemas de classificação, regressão, agrupamento e redes neurais, com o objetivo de **facilitar o aprendizado prático e teórico** desses algoritmos.
 
-## Estrutura
+Cada modelo aqui apresentado segue um pipeline completo com:
 
+* Análise exploratória detalhada 📊
+* Limpeza e tratamento dos dados 🧹
+* Divisão entre treino e teste 🧪
+* Treinamento e validação dos modelos 🧠
+* Avaliação com métricas apropriadas (accuracy, RMSE, R2, etc.) 📈
+* Interpretação dos resultados e visualizações interativas ✨
+
+Todos os notebooks são comentados, com explicações passo a passo para tornar o aprendizado acessível para todos os níveis.
+
+---
+
+## Estrutura de Pastas 📂
+
+### 1. Agrupamento (`Agrupamento/`)
+
+Modelos de clustering não supervisionado:
+
+* `DBSCAN.ipynb`
+* `GMM.ipynb` (Gaussian Mixture Models)
+* `HAC.ipynb` (Hierarchical Agglomerative Clustering)
+* `k-means.ipynb`
+
+### 2. Classificação (`Classificação/`)
+
+Modelos supervisionados para classificação:
+
+* `AdaBoostClassifier.ipynb`
+* `DecisionTreeClassifier.ipynb`
+* `GradientBoostingClassifier.ipynb`
+* `KNNClassifier.ipynb`
+* `LogisticRegression.ipynb`
+* `NaiveBayesBernoulli.ipynb`
+* `NaiveBayesGaussiano.ipynb`
+* `RandomForestClassifier.ipynb`
+* `SVM.ipynb`
+
+### 3. Regressão (`Regressão/`)
+
+Modelos supervisionados para problemas de regressão:
+
+* `AdaBoostRegressor.ipynb`
+* `DecisionTreeRegressor.ipynb`
+* `ElasticNet-L1eL2.ipynb`
+* `GLM.ipynb` (Modelos Lineares Generalizados)
+* `GradientBoostRegressor.ipynb`
+* `KNNRegressor.ipynb`
+* `Lasso-L1.ipynb`
+* `LinearRegression.ipynb`
+* `RandomForestRegressor.ipynb`
+* `Ridge-L2.ipynb`
+* `SVR.ipynb`
+
+### 4. Redes Neurais (`Redes Neurais/`)
+
+Modelos baseados em deep learning:
+
+* `CNN.ipynb` (Convolutional Neural Network)
+* `GAN.ipynb` (Generative Adversarial Network)
+* `LSTM.ipynb` (Long Short-Term Memory)
+* `MLPClassifier.ipynb` (Perceptron Multicamadas)
+* `TransformerGPT2.ipynb`
+* Diretório auxiliar: `data/MNIST/raw/`
+
+### 5. Gráficos (`Gráficos/`)
+
+Gráficos personalizados com Matplotlib e Seaborn, essenciais para análise de dados e interpretação de modelos:
+
+* `Graficos-Matplotlib-Seaborn.ipynb`
+
+---
+
+## Detalhamento Interno 📝
+
+Cada notebook possui:
+
+* README interno explicando o funcionamento do algoritmo ✅
+* Detalhamento sobre o dataset utilizado 📄
+* Links de referência e material de apoio 🔗
+
+---
+
+## Como Usar 🚀
+
+1. Clone o repositório
+
+```bash
+git clone https://github.com/seu_usuario/seu_repositorio.git
 ```
-ModelosMachineLearning/
-├── Agrupamento/
-├── Classifica\xC3\xA7\xC3\xA3o/
-│   \xE2\x94\x9C── AdaBoostClassifier.ipynb
-│   \xE2\x94\x9C── DecisionTreeClassifier.ipynb
-│   \xE2\x94\x9C── GradientBoostingClassifier.ipynb
-│   \xE2\x94\x9C── KNN.ipynb
-│   \xE2\x94\x9C── LogisticRegression.ipynb
-│   \xE2\x94\x9C── NaiveBayesBernoulli.ipynb
-│   \xE2\x94\x9C── NaiveBayesGaussiano.ipynb
-│   \xE2\x94\x9C── RandomForest.ipynb
-│   \xE2\x94\x9C── SVM.ipynb
-│   \xE2\x94\x94── Redes Neurais/
-│       \xE2\x94\x9C── CNN.ipynb
-│       \xE2\x94\x9C── GAN.ipynb
-│       \xE2\x94\x9C── MLPClassifier.ipynb
-│       \xE2\x94\x9C── RNN.ipynb
-│       \xE2\x94\x9C── TransformerGPT2.ipynb
-│       \xE2\x94\x94── data/
-└── Regress\xC3\xA3o/
-    \xE2\x94\x9C── DecisionTreeRegressor.ipynb
-    \xE2\x94\x9C── ElasticNet-L1eL2.ipynb
-    \xE2\x94\x9C── GLM.ipynb
-    \xE2\x94\x9C── Lasso-L1.ipynb
-    \xE2\x94\x9C── LinearRegression.ipynb
-    \xE2\x94\x94── Ridge-L2.ipynb
+
+2. Instale os pacotes do ambiente
+
+```bash
+pip install -r requirements.txt
 ```
 
-## Conte\xC3\xBAdo
+3. Execute os notebooks com Jupyter ou VSCode
 
-- **Agrupamento** (`Agrupamento/`): notebooks de clustering como DBSCAN, GMM, HAC e k-means.
-- **Classifica\xC3\xA7\xC3\xA3o** (`Classifica\xC3\xA7\xC3\xA3o/`): inclui t\xC3\xA9cnicas diversas (\xE2\x80\x8Bdecision tree, random forest, SVM, k-NN, logistic regression, Naive Bayes, AdaBoost, Gradient Boosting), al\xC3\xA9m de modelos de redes neurais.
-- **Redes Neurais** (`Classifica\xC3\xA7\xC3\xA3o/Redes Neurais/`): exemplos de CNN, MLP, RNN, GAN e Transformer, acompanhados do dataset MNIST em `data/`.
-- **Regress\xC3\xA3o** (`Regress\xC3\xA3o/`): t\xC3\xA9cnicas como regress\xC3\xA3o linear, Lasso, Ridge, ElasticNet, GLM e arvore de decis\xC3\xA3o.
+---
 
-Cada notebook apresenta explica\xC3\xB5es passo a passo sobre o problema, carregamento de dados, treinamento de modelos e interpreta\xC3\xA7\xC3\xA3o de m\xC3\xA9tricas de desempenho.
+## Objetivo Final 🎯
 
-## Como utilizar
+Este projeto serve tanto como:
 
-1. Clone este reposit\xC3\xB3rio:
-   ```bash
-   git clone <URL-do-repo>
-   cd ModelosMachineLearning
-   ```
-2. Recomenda-se criar um ambiente virtual e instalar as depend\xC3\xAAncias necess\xC3\xA1rias. Cada notebook cont\xC3\xA9m instru\xC3\xA7\xC3\xB5es para instalar suas depend\xC3\xAAncias via `pip`.
-3. Abra os arquivos `.ipynb` em um ambiente Jupyter (JupyterLab, VS Code, Colab etc.) e execute c\xC3\xA9lula por c\xC3\xA9lula.
+* Material de estudos 📚
+* Base para aplicações práticas
+* Inspiração para projetos pessoais e acadêmicos
 
-## Observa\xC3\xA7\xC3\xB5es
+---
 
-- Os notebooks est\xC3\xA3o em portugu\xC3\xAAs e cont\xC3\xA9m emojis e coment\xC3\xA1rios para auxiliar no aprendizado.
-- Alguns exemplos podem requisitar acesso \xC3\xA0 internet para baixar dados (por exemplo, o notebook de RNN usa `yfinance`).
-- O dataset MNIST est\xC3\xA1 incluso em `Classifica\xC3\xA7\xC3\xA3o/Redes Neurais/data` para facilitar a execu\xC3\xA7\xC3\xA3o dos notebooks de CNN e MLP.
-- O arquivo `.gitignore` j\xC3\xA1 ignora ambientes virtuais e sa\xC3\xADdas geradas pelos notebooks.
-
-## Contribui\xC3\xA7\xC3\xB5es
-
-Sinta-se \xC3\xA0 vontade para abrir issues ou enviar pull requests com melhorias, corre\xC3\xA7\xC3\xB5es e novos exemplos de modelos.
-
+Caso tenha sugestões, dúvidas ou queira colaborar, fique à vontade para abrir uma *issue* ou enviar um *pull request*! 🤝
