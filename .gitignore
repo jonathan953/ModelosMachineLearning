@@ -15,11 +15,6 @@ __pycache__/
 *.sqlite3
 *.db
 *.pkl
-*.json
-
-# 🚀 Ignorar configurações locais do VSCode e Jupyter Notebook
-.vscode/
-.ipynb_checkpoints/
 
 # 🚀 Ignorar arquivos gerados pelo sistema operacional
 .DS_Store
