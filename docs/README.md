@@ -17,63 +17,61 @@ Todos os notebooks são comentados, com explicações passo a passo para tornar 
 
 ## Estrutura de Pastas 📂
 
-### 1. Agrupamento (`Agrupamento/`)
+    MODELOS DE MACHINE LEARNING/
+    │
+    ├── agrupamento/                # Modelos não supervisionados para agrupamento de dados
+    │   ├── dbscan.ipynb                → DBSCAN (Density-Based Spatial Clustering)
+    │   ├── gmm.ipynb                   → GMM (Gaussian Mixture Models)
+    │   ├── hac.ipynb                   → HAC (Hierarchical Agglomerative Clustering)
+    │   └── k-means.ipynb              → K-Means Clustering
+    │
+    ├── classificacao/             # Modelos supervisionados para classificação
+    │   ├── adaboost-classifier.ipynb       → AdaBoost Classifier
+    │   ├── decision-tree-classifier.ipynb  → Árvore de Decisão
+    │   ├── gradient-boosting-classifier.ipynb → Gradient Boosting Classifier
+    │   ├── knn-classifier.ipynb            → K-Nearest Neighbors
+    │   ├── logistic-regression.ipynb       → Regressão Logística
+    │   ├── naive-bayes-bernoulli.ipynb     → Naive Bayes (Bernoulli)
+    │   ├── naive-bayes-gaussiano.ipynb     → Naive Bayes (Gaussiano)
+    │   ├── random-forest-classifier.ipynb  → Floresta Aleatória (Random Forest)
+    │   └── svm.ipynb                       → Máquinas de Vetores de Suporte (SVM)
+    │
+    ├── regressao/                 # Modelos supervisionados para regressão
+    │   ├── adaboost-regressor.ipynb        → AdaBoost Regressor
+    │   ├── decision-tree-regressor.ipynb   → Árvore de Decisão para Regressão
+    │   ├── elasticnet-l1el2.ipynb          → ElasticNet (Combina L1 e L2)
+    │   ├── glm.ipynb                       → Modelos Lineares Generalizados (GLM)
+    │   ├── gradient-boost-regressor.ipynb  → Gradient Boosting Regressor
+    │   ├── knn-regressor.ipynb             → KNN Regressor
+    │   ├── lasso-l1.ipynb                  → Lasso Regression (L1)
+    │   ├── linear-regression.ipynb         → Regressão Linear
+    │   ├── random-forest-regressor.ipynb   → Random Forest Regressor
+    │   ├── ridge-l2.ipynb                  → Ridge Regression (L2)
+    │   └── svr.ipynb                       → Support Vector Regressor
+    │
+    ├── redes-neurais/            # Modelos de Deep Learning
+    │   ├── cnn.ipynb                     → Convolutional Neural Network (CNN)
+    │   ├── gan.ipynb                     → Generative Adversarial Network (GAN)
+    │   ├── lstm.ipynb                    → Long Short-Term Memory (LSTM)
+    │   ├── mlp-classifier.ipynb          → Multi-Layer Perceptron (MLP)
+    │   ├── transformer-gpt2.ipynb        → Transformer GPT-2
+    │   └── data/
+    │       └── MNIST/
+    │           └── raw/
+    │               └── imagem_gerada.png
+    │
+    ├── graficos/                # Gráficos para análise e visualização
+    │   └── graficos-matplotlib-seaborn.ipynb  → Gráficos com Matplotlib & Seaborn
+    │
+    ├── docs/                    # Documentação
+    │   ├── LICENSE.txt
+    │   └── README.md
+    │
+    ├── .gitignore
+    ├── requirements.txt
+    └── venv/
 
-Modelos de clustering não supervisionado:
 
-* `DBSCAN.ipynb`
-* `GMM.ipynb` (Gaussian Mixture Models)
-* `HAC.ipynb` (Hierarchical Agglomerative Clustering)
-* `k-means.ipynb`
-
-### 2. Classificação (`Classificação/`)
-
-Modelos supervisionados para classificação:
-
-* `AdaBoostClassifier.ipynb`
-* `DecisionTreeClassifier.ipynb`
-* `GradientBoostingClassifier.ipynb`
-* `KNNClassifier.ipynb`
-* `LogisticRegression.ipynb`
-* `NaiveBayesBernoulli.ipynb`
-* `NaiveBayesGaussiano.ipynb`
-* `RandomForestClassifier.ipynb`
-* `SVM.ipynb`
-
-### 3. Regressão (`Regressão/`)
-
-Modelos supervisionados para problemas de regressão:
-
-* `AdaBoostRegressor.ipynb`
-* `DecisionTreeRegressor.ipynb`
-* `ElasticNet-L1eL2.ipynb`
-* `GLM.ipynb` (Modelos Lineares Generalizados)
-* `GradientBoostRegressor.ipynb`
-* `KNNRegressor.ipynb`
-* `Lasso-L1.ipynb`
-* `LinearRegression.ipynb`
-* `RandomForestRegressor.ipynb`
-* `Ridge-L2.ipynb`
-* `SVR.ipynb`
-
-### 4. Redes Neurais (`Redes Neurais/`)
-
-Modelos baseados em deep learning:
-
-* `CNN.ipynb` (Convolutional Neural Network)
-* `GAN.ipynb` (Generative Adversarial Network)
-* `LSTM.ipynb` (Long Short-Term Memory)
-* `MLPClassifier.ipynb` (Perceptron Multicamadas)
-* `TransformerGPT2.ipynb`
-* Diretório auxiliar: `data/MNIST/raw/`
-
-### 5. Gráficos (`Gráficos/`)
-
-Gráficos personalizados com Matplotlib e Seaborn, essenciais para análise de dados e interpretação de modelos:
-
-* `Graficos-Matplotlib-Seaborn.ipynb`
-
----
 
 ## Detalhamento Interno 📝
 
