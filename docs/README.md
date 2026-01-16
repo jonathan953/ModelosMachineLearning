@@ -1,23 +1,68 @@
 # Projeto de Modelos de Machine Learning
 
-Este repositório reúne uma coleção abrangente de **modelos de Machine Learning** aplicados a diferentes problemas de classificação, regressão, agrupamento e redes neurais, com o objetivo de **facilitar o aprendizado prático e teórico** desses algoritmos.
+Este repositório reúne uma coleção abrangente de **modelos de Machine Learning** aplicados a diferentes problemas de **classificação, regressão, agrupamento e redes neurais**, com o objetivo de **facilitar o aprendizado prático e teórico** desses algoritmos.
 
-Cada modelo aqui apresentado segue um pipeline completo com:
+Cada modelo apresentado segue um pipeline completo, incluindo:
 
-* Análise exploratória detalhada 📊
-* Limpeza e tratamento dos dados 🧹
-* Divisão entre treino e teste 🧪
-* Treinamento e validação dos modelos 🧠
-* Avaliação com métricas apropriadas (accuracy, RMSE, R2, etc.) 📈
-* Interpretação dos resultados e visualizações interativas ✨
+- Análise exploratória detalhada 📊  
+- Limpeza e tratamento dos dados 🧹  
+- Divisão entre treino e teste 🧪  
+- Treinamento e validação dos modelos 🧠  
+- Avaliação com métricas apropriadas (accuracy, RMSE, R², etc.) 📈  
+- Interpretação dos resultados e visualizações ✨  
 
-Todos os notebooks são comentados, com explicações passo a passo para tornar o aprendizado acessível para todos os níveis.
+Todos os notebooks são comentados, com explicações passo a passo para tornar o aprendizado acessível a diferentes níveis de conhecimento.
+
+---
+
+## 🔍 Diferencial do Projeto
+
+Além dos estudos de Machine Learning, este repositório inclui uma seção dedicada à **manipulação e preparação de dados com pandas**, traduzindo operações comuns de **SQL para Python**.
+
+São abordados, na prática, conceitos como:
+
+- SELECT, WHERE, ORDER BY  
+- JOINs (INNER, LEFT, FULL)  
+- GROUP BY / HAVING  
+- Subqueries e CTEs  
+- CASE WHEN  
+- Funções de janela (ROW_NUMBER, RANK, LAG, LEAD)  
+
+Esse diferencial simula cenários reais de **ETL, Analytics e Data Science**, fortalecendo a base de dados antes da modelagem.
+
+---
+
+## ⚠️ Observação Importante
+
+> Todos os **datasets utilizados são sintéticos**, criados exclusivamente para fins educacionais.  
+> Nenhum dado real ou sensível foi utilizado neste projeto.
+
+---
+
+## Tecnologias Utilizadas 🛠️
+
+- Python 3.10+
+- pandas, numpy
+- scikit-learn
+- matplotlib, seaborn
+- Jupyter Notebook / VS Code
+- Git & GitHub
 
 ---
 
 ## Estrutura de Pastas 📂
 
-    MODELOS DE MACHINE LEARNING/
+    modelos-machine-learning/
+    │
+    ├── data/                      # Datasets usados nos estudos (dados sintéticos)
+    │   ├── customers.csv
+    │   ├── order_items.csv
+    │   ├── orders.csv
+    │   ├── payments.csv
+    │   └── products.csv
+    │
+    ├── pandas/                    # Estudos de manipulação de dados (SQL → pandas, ETL)
+    │   └── etl.ipynb                  → ETL e tradução prática de SQL para pandas
     │
     ├── agrupamento/                # Modelos não supervisionados para agrupamento de dados
     │   ├── dbscan.ipynb                → DBSCAN (Density-Based Spatial Clustering)
@@ -63,23 +108,13 @@ Todos os notebooks são comentados, com explicações passo a passo para tornar 
     ├── graficos/                # Gráficos para análise e visualização
     │   └── graficos-matplotlib-seaborn.ipynb  → Gráficos com Matplotlib & Seaborn
     │
-    ├── docs/                    # Documentação
+    ├── docs/                    # Documentação do projeto
     │   ├── LICENSE.txt
     │   └── README.md
     │
     ├── .gitignore
-    ├── requirements.txt
-    └── venv/
+    └── requirements.txt
 
-
-
-## Detalhamento Interno 📝
-
-Cada notebook possui:
-
-* README interno explicando o funcionamento do algoritmo ✅
-* Detalhamento sobre o dataset utilizado 📄
-* Links de referência e material de apoio 🔗
 
 ---
 
@@ -103,11 +138,16 @@ pip install -r requirements.txt
 
 ## Objetivo Final 🎯
 
-Este projeto serve tanto como:
+Este projeto tem como objetivo **consolidar fundamentos de Data Science e Machine Learning**
+por meio de **implementações práticas e bem documentadas**, servindo como:
 
-* Material de estudos 📚
-* Base para aplicações práticas
-* Inspiração para projetos pessoais e acadêmicos
+- 📚 Material de estudo estruturado  
+- 🧠 Repositório de referência conceitual e prática  
+- 💼 Portfólio técnico para projetos acadêmicos e profissionais  
+
+O foco está em unir **teoria, prática e organização**, simulando cenários reais
+de análise de dados, preparação de dados (ETL) e modelagem preditiva.
+
 
 ---
 
