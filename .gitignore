@@ -16,6 +16,9 @@ __pycache__/
 *.db
 *.pkl
 
+# ✅ PERMITIR CSVs NA PASTA data
+!data/**/*.csv
+
 # 🚀 Ignorar arquivos gerados pelo sistema operacional
 .DS_Store
 Thumbs.db
